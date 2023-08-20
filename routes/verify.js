@@ -98,16 +98,15 @@ router.post('/upload', upload.single('file'), function (req, res) {
     const title = req.body.title;
     const file = req.file;
 
-    console.log("file uploaded", title);
+    // console.log("file uploaded", title);
     // console.log('file', file);
 
     is_valid = chilkatExample(file.filename)
-
     if(is_valid) {
-        res.sendStatus(200);
+        res.status(200).json({msg : "OK"});
     }
     else {
-        res.sendStatus(406);
+        res.status(200).json({msg : "failed"});
     }
     
 });
