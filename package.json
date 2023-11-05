@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@chilkat/ck-node11-linux64": "^9.50.90",
+    "@chilkat/ck-node18-linux64": "^9.50.96",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "^2.6.9",
